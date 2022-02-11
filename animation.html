@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document form</title>
+    <link rel="stylesheet" href="animation.css" type="text/css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <!-- <script src="https://ajax.googleapis/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+    <script src="https://kit.fontawesome.com/494557661e.js" crossorigin="anonymous"></script>
+    <link src="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <form>
+           <h2>&#8645;</h2>
+
+
+        <div class="input-group">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter Your Name" class="outline" id="contact-name" onkeyup="ValidateName()">
+            <span id="name-error"></span>
+  
+        </div>
+        <div class="input-group">
+            <label>Phone No.</label>
+            <input type="tel" placeholder="123 456 7890" class="outline" id="contact-phone" onkeyup="ValidatePhone()">
+            <span id="phone-error"></span>
+        </div>
+        <div class="input-group input3">
+            <label>Email Id.</label>
+            <input type="text" placeholder="Enter Your Email" class="outline" id="contact-email" onkeyup="ValidateEmail()">
+            <span id="email-error" class="subit3"></span>
+        </div>
+        <div class="input-group input-group2">
+            <label>Your Massage</label>
+            <textarea rows="5"  class="text" placeholder="Enter Your Message" class="outline2" id="contact-message" onkeyup="ValidateMessage()" ></textarea>
+            <span id="message-error" class="subit2"></span>
+        </div>
+        <span id="submit-error" class="subit"></span>
+       <button onclick="return ValidateForm()">Submit</button>
+       <button onclick="return ValidateReset()">Reset</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

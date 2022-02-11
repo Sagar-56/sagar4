@@ -1,0 +1,278 @@
+body{
+    margin: 0;
+   background-color: #FFE4E1;
+}
+form{
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 350px;
+    text-align: center;
+    line-height: 3.5rem;
+}
+h2{
+    margin-top: -19px;
+    width: 50px;
+    height: 50px;
+    background-color: lightblue;
+    /* box-shadow: 0px 0px 1px gray; */
+    text-align: center;
+    position: relative;
+    margin-left: 44%;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 50%;
+    animation: revolve infinite 5s linear forwards;
+}
+@keyframes revolve{
+    0%{
+      transform: rotate(30deg);
+    }
+    25%{
+        transform: rotate(90deg);
+        background-color: aqua;
+    }
+    50%{
+        transform: rotate(180deg);
+        background-color: darkkhaki;
+    }
+    75%{
+        transform: rotate(270deg);
+        background-color: darkseagreen;
+    }
+    100%{
+        transform: rotate(360deg);
+        /* background-color: darkorange; */
+    }
+
+}
+
+.input-group{
+    text-align: center;
+    position: relative;
+}
+::placeholder{
+    color: grey;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.input-group input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-left: 10px;
+    border-bottom: 1px solid grey;
+    width: 200px;
+}
+.outline:focus{
+    outline: none;
+}
+.input-group input:hover{
+    cursor: pointer;
+}
+.input-group textarea{
+    border-top-style: hidden;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    outline: none;
+    border: 1px solid gray;
+    width: 45%;
+}
+.input-group2 ::placeholder{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    
+}
+.input-group > textarea:hover{
+    cursor: pointer;
+}
+button{
+    border: none;
+    background-color: #1F618D;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 2px;
+}
+button:hover{
+    color: black;
+    transform: scale(0.9);
+    cursor: pointer;
+}
+span{
+    font-size: 10px;
+    margin-left: -79px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 10px;
+    display: inline-block;
+    position: absolute;
+    color: red;
+}
+.subit{
+    margin-left: 9px;
+    margin-top: 27px;
+}
+.subit2{
+    margin-top: 59.9px;
+}
+.subit3{
+    margin-left: -67px;
+}
+.input-group span i{
+    color: seagreen;
+    background-color: aquamarine;
+}
+
+
+
+
+@media screen and (max-width:360px){
+    body{
+        margin: auto;
+        padding: 0;
+        box-sizing: border-box;
+        width: 100%;
+        overflow: hidden;
+    }
+    .main{
+    width: 100%;
+    background-color: aqua;
+    }  
+    form{
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    margin: 100px 29px;
+    text-align: center;
+    line-height: 2.6rem;
+        
+    } 
+    .input-group{
+    text-align: center;
+    position: relative;
+
+    }
+    .input-group input{
+        margin-left: 10px;
+        width: 130px;
+    }
+    .input-group textarea{
+        width: 39%;
+        height: 50px;
+    }
+    .input-group2 ::placeholder{
+        font-size: 10px;
+    }  
+    ::placeholder{
+        font-size: 10px;
+    }  
+    bottom{
+        padding: 3px 10px;
+    }
+    .input3 {
+        margin-left: -4px;
+
+    }
+    .input3 input{
+        width: 132px;
+    }
+    span{
+        font-size: 9px;
+        margin-left: -49px;
+        margin-bottom: 10px;
+        display: inline-block;
+        position: absolute;
+        color: red;
+    }
+    .subit{
+        margin-left: -55px;
+        margin-top: 21px;
+        overflow: hidden;
+    }
+    .subit2{
+        margin-top: 44.9px;
+        overflow: hidden;
+    }
+    .input3 .subit3{
+        margin-left: -43px;
+        position: absolute;
+    }
+}
+@media screen and (max-width:740px){
+    body{
+        margin: auto;
+        padding: 0;
+        box-sizing: border-box;
+        width: 100%;
+        overflow: hidden;
+    }
+    .main{
+    width: 100%;
+    background-color: aqua;
+    }  
+    form{
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    margin: 30px 230px;
+    text-align: center;
+    line-height: 2.6rem;
+        
+    } 
+    .input-group{
+    text-align: center;
+    position: relative;
+
+    }
+    .input-group input{
+        margin-left: 10px;
+        width: 130px;
+    }
+    .input-group textarea{
+        width: 39%;
+        height: 50px;
+    }
+    .input-group2 ::placeholder{
+        font-size: 10px;
+    }  
+    ::placeholder{
+        font-size: 10px;
+    }  
+    bottom{
+        padding: 3px 10px;
+    }
+    .input3 {
+        margin-left: -4px;
+
+    }
+    .input3 input{
+        width: 132px;
+    }
+    span{
+        font-size: 9px;
+        margin-left: -49px;
+        margin-bottom: 10px;
+        display: inline-block;
+        position: absolute;
+        color: red;
+    }
+    .subit{
+        margin-left: -55px;
+        margin-top: 21px;
+        overflow: hidden;
+    }
+    .subit2{
+        margin-top: 44.9px;
+        overflow: hidden;
+    }
+    .input3 .subit3{
+        margin-left: -43px;
+        position: absolute;
+    }
+}
